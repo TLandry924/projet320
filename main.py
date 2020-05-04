@@ -115,6 +115,6 @@ if __name__ == "__main__":
 
     if args == "automatique":
         # recherche sur le serveur de la partie ..... partie = (fonction)
-        jeu = QuoridorX(jeu["joueurs"], murs=jeu["murs"])
+        jeu = QuoridorX(jeu["joueurs"], jeu["murs"])
         jeu.jouer_coup()
         
