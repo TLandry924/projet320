@@ -1,7 +1,7 @@
 import argparse
 import api
 import quoridor
-import quoridorx
+from quoridorx import QuoridorX
 import turtle
 
 
@@ -83,6 +83,8 @@ def afficher_damier_ascii(état):
 
 
 def demande_action(demande, option_reponse):
+
+
     action_entre = True
     while action_entre:
         action = input(demande)
