@@ -96,25 +96,4 @@ def demande_action(demande, option_reponse):
                     action_entre = False
     return action
 
-if __name__ == "__main__":
-    args = analyser_commande()
-
-    if args == "idul":
-        gagnant = 0
-        while gagnant == 0:
-            action = demande_action("Quel coup d/sirez-vous jouer ? (deplacer ou mur)", ["deplacer", "mur"])
-            if action == "deplacer":
-                
-
-                if action == "mur":
-                    orientation = demande_action("Quel orientation pour le mur ? (vertical ou horizontal)", ["vertical", "horizontal"])
-                    position_x = demande_action("Quel position en x d/sirez-vous ? (chiffre entre 0 et 9)", [(0,9)])
-                    position_y = demande_action("Quel position en y d/sirez-vous ? (chiffre entre 0 et 9)", [(0,9)])
-                    jouer_coup(id, type_coup, (position_x, position_y))
-
-
-    if args == "automatique":
-        # recherche sur le serveur de la partie ..... partie = (fonction)
-        jeu = QuoridorX(jeu["joueurs"], jeu["murs"])
-        jeu.jouer_coup()
         
